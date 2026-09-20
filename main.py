@@ -34,6 +34,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+try:
+        pipeline = joblib.load("fake_news_pipeline.pkl")
+        print("Model loaded successfully")
+except Exception as e:
+    print("MODEL ERROR:", repr(e))
+    pipeline = None
+    raise HTTPException(
+        status_code=500,
+        detail=f"Model couldn't load: {str(e)}"
+    )
+
 
 @app.get("/")
 async def greet():
@@ -42,17 +53,13 @@ async def greet():
 
 @app.post("/news/")
 async def news_prediction(news: NewsInput):
-    text = clean_text(news.title)
-    
-    try:
-        pipeline = joblib.load("fake_news_pipeline.pkl")
-    except Exception as e:
-        print("MODEL ERROR:", repr(e))
+    if pipeline is None:
         raise HTTPException(
             status_code=500,
-            detail=f"Model couldn't load: {str(e)}"
+            detail="Model is not loaded"
         )
-    print(pipeline.classes_)
+        
+    text = clean_text(news.title)
     try:
         prediction = pipeline.predict([text])[0]
         probability = pipeline.predict_proba([text])[0]
