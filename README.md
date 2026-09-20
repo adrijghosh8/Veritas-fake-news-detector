@@ -1,4 +1,4 @@
-# 📰 Fake News Detection
+# Vertias - Fake News Detection
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
@@ -123,6 +123,7 @@ to test the API using FastAPI's interactive documentation.
 ```text
 Fake-News-Detection/
 │
+├── frontend/
 ├── main.py
 ├── fake_news_pipeline.pkl
 ├── requirements.txt
