@@ -123,6 +123,7 @@ to test the API using FastAPI's interactive documentation.
 ```text
 Fake-News-Detection/
 │
+├── frontend/
 ├── main.py
 ├── fake_news_pipeline.pkl
 ├── requirements.txt
