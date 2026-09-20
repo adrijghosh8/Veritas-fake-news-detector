@@ -1,0 +1,39 @@
+:root {
+  /* Core palette */
+  --navy: #061c33;
+  --navy-dark: #031426;
+  --ivory: #f7f5ef;
+  --marble: #ede9e1;
+  --gold: #c9a75b;
+  --gold-light: #e4cf9a;
+  --text: #111827;
+  --text-on-navy: #f2efe6;
+  --text-muted: #5b6472;
+  --text-muted-on-navy: #aab4c4;
+
+  /* Status */
+  --verdict-true: #3f7a5c;
+  --verdict-true-bg: #eaf2ec;
+  --verdict-fake: #a8483a;
+  --verdict-fake-bg: #f6eae8;
+
+  /* Borders */
+  --border: rgba(6, 28, 51, 0.1);
+  --border-on-navy: rgba(247, 245, 239, 0.16);
+  --border-gold: rgba(201, 167, 91, 0.55);
+
+  /* Elevation */
+  --shadow-soft: 0 12px 28px rgba(6, 28, 51, 0.08);
+  --shadow-lift: 0 18px 40px rgba(6, 28, 51, 0.14);
+
+  /* Type */
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --max-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
