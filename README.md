@@ -4,6 +4,20 @@
 
 VERITAS uses Google Gemini, LangChain, Tavily, and Google Fact Check API to extract factual claims from news articles, retrieve relevant evidence, and generate evidence-based verdicts.
 
+## 🎬 Working Demo
+
+Click the thumbnail below to watch VERITAS in action.
+
+<p align="center">
+  <a href="https://youtu.be/KOVr5yCNRiQ">
+    <img src="https://img.youtube.com/vi/KOVr5yCNRiQ/maxresdefault.jpg" alt="VERITAS — Working Demo Video" width="800"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://youtu.be/KOVr5yCNRiQ">▶ Watch the VERITAS Demo on YouTube</a>
+</p>
+
 ## ✨ Features
 
 - 🧠 **LLM-based verification** using Google Gemini
