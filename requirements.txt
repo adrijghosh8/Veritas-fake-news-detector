@@ -6,3 +6,7 @@ pandas
 numpy
 joblib
 matplotlib
+tavily-python
+python-dotenv
+langchain-core
+langchain-google-genai
